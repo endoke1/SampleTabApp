@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>  
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+            
+            <!-- iPad/iPhone specific css below, add after your main css >
+             <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+             <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+             -->
+            <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+            
+            <!-- jQuery Mobile Start -->    
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+            <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+            <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+            <!-- iQuery Mobile end -->
+            
+            <script type="text/javascript" charset="utf-8" src="cordova-1.7.0rc1.js"></script>
+            
+            <script type="text/javascript">
+                
+                
+                // If you want to prevent dragging, uncomment this section
+                /*
+                 function preventBehavior(e) 
+                 { 
+                 e.preventDefault(); 
+                 };
+                 document.addEventListener("touchmove", preventBehavior, false);
+                 */
+                
+                /* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+                 see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+                 for more details -jm */
+                /*
+                 function handleOpenURL(url)
+                 {
+                 // TODO: do something with the url passed in.
+                 }
+                 */
+                
+                function onBodyLoad()
+                {		
+                    document.addEventListener("deviceready", onDeviceReady, false);
+                }
+                
+                /* When this function is called, Cordova has been initialized and is ready to roll */
+                /* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+                 see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+                 for more details -jm */
+                function onDeviceReady()
+                {
+                    // do your thing!
+                    //		navigator.notification.alert("Cordova is working")
+                }
+                
+                </script>
+            
+            </head>
+    <body onload="onBodyLoad()">
+        <!-- ここから1ページ目 -->    
+        <section id="page1" data-role="page">
+            <div data-role="header">
+                <h1>SampleTagApp</h1>
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#page1" class="ui-btn-active">1つ目</a></li>
+                        <li><a href="#page2" >2つ目</a></li>
+                        <li><a href="#page3" >3つ目</a></li>
+                        <li><a href="#page4" >4つ目</a></li>
+                    </ul>
+                </nav>
+            </div><!-- /header -->
+            
+            
+            
+            <div data-role="content" class="content">
+                <p>１ページ名</p>
+            </div>
+            <div data-role="footer">
+                <p>フッター</p>
+            </div><!-- /header -->
+            </div><!-- /page -->
+        </section>
+        
+        <!-- ここから2ページ目 -->
+        <section id="page2" data-role="page">
+            <div data-role="header">
+                <h1>SampleTagApp</h1>
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#page1" >1つ目</a></li>
+                        <li><a href="#page2" class="ui-btn-active">2つ目</a></li>
+                        <li><a href="#page3" >3つ目</a></li>
+                        <li><a href="#page4" >4つ目</a></li>
+                    </ul>
+                </nav>
+            </div><!-- /header -->
+            
+            
+            
+            <div data-role="content" class="content">
+                <p>2ページ名</p>
+            </div>
+            <div data-role="footer">
+                <p>フッター</p>
+            </div><!-- /header -->
+            </div><!-- /page -->
+        </section>
+        
+        <!-- ここから3ページ目 -->
+        <section id="page3" data-role="page">
+            <div data-role="header">
+                <h1>SampleTagApp</h1>
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#page1" >1つ目</a></li>
+                        <li><a href="#page2" >2つ目</a></li>
+                        <li><a href="#page3" class="ui-btn-active">3つ目</a></li>
+                        <li><a href="#page4" >4つ目</a></li>
+                    </ul>
+                </nav>
+            </div><!-- /header -->
+            
+            <div data-role="content" class="content">
+                <p>3ページ名</p>
+            </div>
+            <div data-role="footer">
+                <p>フッター</p>
+            </div><!-- /header -->
+            </div><!-- /page -->
+        </section>
+        
+        <!-- ここから4ページ目 -->
+        <section id="page4" data-role="page">
+            <div data-role="header">
+                <h1>SampleTagApp</h1>
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#page1" >1つ目</a></li>
+                        <li><a href="#page2" >2つ目</a></li>
+                        <li><a href="#page3" >3つ目</a></li>
+                        <li><a href="#page4" class="ui-btn-active">4つ目</a></li>
+                    </ul>
+                </nav>
+            </div><!-- /header -->
+            
+            <div data-role="content" class="content">
+                <p>4ページ名</p>
+            </div>
+            <div data-role="footer">
+                <p>フッター</p>
+            </div><!-- /header -->
+            </div><!-- /page -->
+        </section>
+    </body>
+</html>
